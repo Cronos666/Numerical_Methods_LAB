@@ -55,8 +55,8 @@ int main(){
   
   //calc
   cout<<setprecision(8);
-  double e=exact(2);
-  double e2=exact2(2);
+  double e=exact(x);
+  double e2=exact2(x);
     
   for (int i=0; i<10; i++){
     
