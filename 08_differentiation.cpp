@@ -39,7 +39,6 @@ double exact2(double x){
 int main(){
 
   double x = 2;
-  double cent[10], cent2[10], forw[10], forw2[10];
   
   //files
   ofstream Data_f("08forward.csv");
@@ -56,10 +55,10 @@ int main(){
   
   //calc
   cout<<setprecision(8);
-  for (int i=0; i<10; i++){
+  double e=exact(2);
+  double e2=exact2(2);
     
-    double e=exact(2);
-    double e2=exact2(2);
+  for (int i=0; i<10; i++){
     
     double h = (i+1)*0.05;
     //forward
