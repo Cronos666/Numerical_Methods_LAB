@@ -58,7 +58,7 @@ int main(){
 
   tridiag(a, b, c, r, n, x);
 
-  cout<<setprecision(8);
+  cout<<fixed<<setprecision(8);
   for (int i=0; i<n; i++){
     cout<<"x_"<<i+1<<": "<<x[i]<<"\n";
   }
@@ -72,7 +72,7 @@ int main(){
     }
     double error = abs(calc_r - r[i]);
 
-    cout<<"Row "<<i+1<<"\n  calculated r: "<<calc_r<<"\n  expected r: "<<r[i]<<"\n  error: "<<error<<"\n";
+    cout<<"Row "<<i+1<<"\n  calculated r: "<<calc_r<<"\n  expected r:   "<<r[i]<<"\n  error:        "<<error<<"\n";
   }
 
   return 0;
